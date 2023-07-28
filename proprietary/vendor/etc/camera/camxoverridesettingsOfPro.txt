@@ -7,6 +7,7 @@ logWarningMask=0
 logConfigMask=0
 overrideLogLevels=0x1
 systemLogEnable=TRUE
+logCoreCfgMask=0
 enableAsciiLogging=FALSE
 logRequestMapping=FALSE
 enableTxtLogging=0
