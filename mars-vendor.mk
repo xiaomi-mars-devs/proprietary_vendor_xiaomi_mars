@@ -34,6 +34,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mars/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd \
     vendor/xiaomi/mars/proprietary/vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd \
     vendor/xiaomi/mars/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd \
+    vendor/xiaomi/mars/proprietary/vendor/etc/audio/sku_lahaina/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_platform_info.xml \
+    vendor/xiaomi/mars/proprietary/vendor/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml \
+    vendor/xiaomi/mars/proprietary/vendor/etc/audio/sku_lahaina/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/mixer_paths.xml \
+    vendor/xiaomi/mars/proprietary/vendor/etc/audio/sku_lahaina/mixer_paths_overlay_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/mixer_paths_overlay_dynamic.xml \
+    vendor/xiaomi/mars/proprietary/vendor/etc/audio/sku_lahaina/mixer_paths_overlay_static.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/mixer_paths_overlay_static.xml \
+    vendor/xiaomi/mars/proprietary/vendor/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml \
+    vendor/xiaomi/mars/proprietary/vendor/etc/audio/sku_lahaina/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_platform_info.xml \
     vendor/xiaomi/mars/proprietary/vendor/etc/camera/CFR_para_MACRO_V01.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_MACRO_V01.bin \
     vendor/xiaomi/mars/proprietary/vendor/etc/camera/CFR_para_MACRO_V01_L.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_MACRO_V01_L.bin \
     vendor/xiaomi/mars/proprietary/vendor/etc/camera/CFR_para_MACRO_V01_SN.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_MACRO_V01_SN.bin \
@@ -431,6 +438,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mars/proprietary/vendor/firmware/vpu20_4v.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b17 \
     vendor/xiaomi/mars/proprietary/vendor/firmware/vpu20_4v.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b18 \
     vendor/xiaomi/mars/proprietary/vendor/firmware/vpu20_4v.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b19 \
+    vendor/xiaomi/mars/proprietary/vendor/firmware/vpu20_4v.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.elf \
+    vendor/xiaomi/mars/proprietary/vendor/firmware/vpu20_4v.lst:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.lst \
     vendor/xiaomi/mars/proprietary/vendor/firmware/vpu20_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mbn \
     vendor/xiaomi/mars/proprietary/vendor/firmware/vpu20_4v.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mdt \
     vendor/xiaomi/mars/proprietary/vendor/firmware/vpu20_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v_unsigned.mbn \
@@ -715,7 +724,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libBlinkStub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBlinkStub.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libFlickerDet.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlickerDet.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libI420colorconvert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libI420colorconvert.so \
-    vendor/xiaomi/mars/proprietary/vendor/lib64/libQnnHtpStub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtpStub.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSNPE.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libSuperSensorCPU.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSuperSensorCPU.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libXMFace.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libXMFace.so \
@@ -798,15 +806,17 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libmibokeh_855.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmibokeh_855.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libmibokeh_mask.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmibokeh_mask.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libmibokeh_mask_dsp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmibokeh_mask_dsp.so \
+    vendor/xiaomi/mars/proprietary/vendor/lib64/libmicuttlefish_fs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmicuttlefish_fs.so \
+    vendor/xiaomi/mars/proprietary/vendor/lib64/libmicuttlefish_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmicuttlefish_utils.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libmiface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiface.so \
-    vendor/xiaomi/mars/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
-    vendor/xiaomi/mars/proprietary/vendor/lib64/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libminziparchive.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminziparchive.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libmiphone_capture_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiphone_capture_bokeh.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libmiphone_preview_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiphone_preview_bokeh.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiracast.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libmiriskmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiriskmanager.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libmisecurity.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmisecurity.so \
+    vendor/xiaomi/mars/proprietary/vendor/lib64/libmisight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmisight.so \
+    vendor/xiaomi/mars/proprietary/vendor/lib64/libmivsock_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmivsock_utils.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-color-convertor.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-hdcpmgr.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libmmcamera_bestats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_bestats.so \
@@ -818,8 +828,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libmmcamera_mfnr_t4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_mfnr_t4.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libmmcamera_pdpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_pdpc.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libmmhardware.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmhardware.so \
-    vendor/xiaomi/mars/proprietary/vendor/lib64/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal.so \
-    vendor/xiaomi/mars/proprietary/vendor/lib64/libmodemapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmodemapi.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libnanopb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnanopb.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libnotifyaudiohal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnotifyaudiohal.so \
@@ -828,7 +836,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libopencv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopencv.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libopenvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopenvx.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libopestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopestriping.so \
-    vendor/xiaomi/mars/proprietary/vendor/lib64/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libops.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libos.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libportrait_blur.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libportrait_blur.so \
     vendor/xiaomi/mars/proprietary/vendor/lib64/libprotobuf-cpp-full-vendor-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full-vendor-3.9.1.so \
