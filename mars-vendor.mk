@@ -460,6 +460,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mars/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
+    libbitmlengine \
+    libcamera_nn_stub \
     libcamxexternalformatutils \
     libcamxfacialfeatures \
     libcamxfdalgo \
@@ -481,7 +483,17 @@ PRODUCT_PACKAGES += \
     libmmcamera_mfnr \
     libmmcamera_mfnr_t4 \
     libmmcamera_pdpc \
+    libofflinelog \
+    libopencv \
     libprotobuf-cpp-full-vendor-3.9.1 \
+    libsensorslog \
+    libsns_fastRPC_util \
+    libsns_low_lat_stream_stub \
+    libsnsapi \
+    libsnsdiaglog \
+    libssc \
+    vendor.xiaomi.hardware.cameraperf@1.0-impl \
+    vendor.xiaomi.hardware.cameraperf@1.0 \
     vl53l5.hal@1.0 \
     vl53l5.hal@2.0 \
     audio.primary.lahaina \
@@ -679,6 +691,8 @@ PRODUCT_PACKAGES += \
     libI420colorconvert \
     libSNPE \
     libSuperSensorCPU \
+    libSuperSensorHVX \
+    libSuperSensorSDK \
     libXMFace \
     libaidenoiser \
     libalAILDC \
@@ -697,11 +711,9 @@ PRODUCT_PACKAGES += \
     libarcsoft_portrait_lighting_c \
     libarcsoft_qnnhtp \
     libarcsoft_super_night_raw \
-    libbitmlengine \
     libblink \
     libc++_shared \
     libcamera_dirty \
-    libcamera_nn_stub \
     libcamera_scene \
     libcamera_scene_dxo \
     libcamerapostproc \
@@ -748,13 +760,9 @@ PRODUCT_PACKAGES += \
     libmibokeh_mask_dsp \
     libmicuttlefish_fs \
     libmicuttlefish_utils \
-    libmiface \
     libminziparchive \
     libmiphone_capture_bokeh \
     libmiphone_preview_bokeh \
-    libmiracast \
-    libmiriskmanager \
-    libmisecurity \
     libmisight \
     libmivsock_utils \
     libmm-color-convertor \
@@ -764,28 +772,21 @@ PRODUCT_PACKAGES += \
     libnanopb \
     libnotifyaudiohal \
     libofflinedump \
-    libofflinelog \
-    libopencv \
     libopenvx \
     libopestriping \
     libos \
     libportrait_blur \
+    libpowercore \
     libqll10 \
     libqllengine \
     librelight_only \
     libremosaic_wrapper \
     libremosaiclib \
     libsensorcal \
-    libsensorslog \
     libsnpe_htp \
     libsns_api \
     libsns_device_mode_stub \
-    libsns_fastRPC_util \
-    libsns_low_lat_stream_stub \
     libsns_registry_skel \
-    libsnsapi \
-    libsnsdiaglog \
-    libssc \
     libssc_default_listener \
     libssccalapi \
     libsupermoon \
@@ -801,7 +802,6 @@ PRODUCT_PACKAGES += \
     libwa_opticalzoom_fusion \
     libwa_opticalzoomfactor \
     libwa_sat \
-    libwapi_cert \
     libxmi_hdr_SR \
     libxmi_hdr_bokeh \
     libxmi_hdr_checker \
@@ -811,8 +811,6 @@ PRODUCT_PACKAGES += \
     sensors.ssc \
     sensors.touch.detect \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
-    vendor.xiaomi.hardware.cameraperf@1.0-impl \
-    vendor.xiaomi.hardware.cameraperf@1.0 \
     vendor.xiaomi.hardware.campostproc@1.0-service-impl \
     vendor.xiaomi.hardware.campostproc@1.0 \
     vendor.xiaomi.hardware.citsensorservice@1.0 \
