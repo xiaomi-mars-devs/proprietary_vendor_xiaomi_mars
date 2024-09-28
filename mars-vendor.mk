@@ -816,7 +816,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.citsensorservice@1.0 \
     vendor.xiaomi.hardware.citsensorservice@1.1 \
     vendor.xiaomi.hardware.dtool@1.0 \
-    vendor.xiaomi.hardware.fx.tunnel@1.0 \
     capi_v2_aptX_CLHDADV_Encoder \
     capi_v2_aptX_CLHDAD_Speech_Decoder \
     capi_v2_cirrus_sp \
